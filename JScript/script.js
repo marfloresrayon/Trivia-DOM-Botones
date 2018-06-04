@@ -79,16 +79,12 @@ function lastFunction(){
     incorrect3 = '3.¡Oh! No acertaste, la respuesta correcta es: C. do while no es una estructura de control que hayamos visto aun.';
   }
 
+
+  /* Acciones de impresión de respuestas */
+    showResults.style.display = 'block';
+      titleRightAnswers.innerHTML = 'Respuestas Correctas:' ; //Impresión de resultados en la pantalla final del juego
+      titleWrongAnswers.innerHTML = 'Respuestas Incorrectas:';
+      right.innerHTML = '</br>' + correct1 + '</br>' + correct2 + '</br>'+ correct3;
+      wrong.innerHTML ='</br>' + incorrect1 + '</br>' + incorrect2 + '</br>' + incorrect3;
+    
 }
-
-
-//Si se cumple se desplegarán los resultados del juego que ha llevado a cabo la usuaria
-
-//console.log(isReadyToPlay)
-//if (isReadyToPlay) {
-//  showResults.style.display = 'block';
-  //titleRightAnswers.innerHTML = 'Respuestas Correctas:' ; //Impresión de resultados en la pantalla final del juego
-  //titleWrongAnswers.innerHTML = 'Respuestas Incorrectas:';
-  //right.innerHTML = '</br>' + correct1 + '</br>' + correct2 + '</br>'+ correct3 +'</br>'+ correct4 +'</br>'+ correct5 + '</br>' + correct6 ;
-  //wrong.innerHTML ='</br>' + incorrect1 + '</br>' + incorrect2 + '</br>' + incorrect3 +'</br>'+ incorrect4 +'</br>'+ incorrect5 +'</br>'+ incorrect6;
-//}
