@@ -55,7 +55,7 @@ function lastFunction(){
   console.log(question1,question2,question3)
 
 
-  if (question1 == 'c' || 'C') { //Condicionales para conocer los resultados que se desplegarán al final del juego
+  if (question1 == 'c') { //Condicionales para conocer los resultados que se desplegarán al final del juego
     console.log('respuestacorrecta');
     correct1 = '1.HTML es: c) Un lenguaje de marcado y modelado semántico.';
   } else {
@@ -63,7 +63,7 @@ function lastFunction(){
     incorrect1 = '1.Upss...te falló. La respuesta correcta es: C. HTML es un lenguaje de marcado y modelado semántico';
   }
 
-  if (question2 == 'b'|| 'B') {
+  if (question2 == 'b') {
     console.log('respuestacorrecta');
     correct2 = '2.¿Qué significa CSS? b) Hojas de estilo en cascada.';
   } else {
@@ -71,7 +71,7 @@ function lastFunction(){
     incorrect2 = '2.Será para la próxima. la respuesta correcta es: B. CSS significa hojas de estilo en cascada.';
   }
 
-  if (question3 == 'c' || 'C') {
+  if (question3 == 'c') {
     console.log('respuestacorrecta');
     correct3 = '3.¿Cuál de estas no es una estructura de control? c) do while.';
   } else {
