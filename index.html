@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia</title> <!-- Título -->
+    <link rel='stylesheet' href='CSS/estilostrivia.css'> <!-- Link con CSS -->
+  </head>
+  <body>
+    <div class='image-laboratoria'>
+      <a href='https://www.youtube.com/channel/UC3LdpwpeIJqbm4hafXXqRHA" target="_blank'>  <!-- Se utilizo etiqueta <a></a> para incluir el enlace a la página de Youtube de Laboratoria -->
+        <img src='https://preview.ibb.co/fPEOOy/logo_laboratoria_07_2.png' alt='logo_laboratoria_07_2' border='0'>
+      </a>
+    </div>
+    <input type="text" id="myText" placeholder="Escribe tu nombre">
+<button onclick="myFunction()">Continuar</button>
+<p id="name"></p>
+    <h1 id='titleTrivia'>Trivia de Pre-admisión</h1> <!-- Titulo de la página con ID para poder modificar en CSS-->
+    <hr/>
+    <section id=empecemos>
+    <h2>¿Quieres jugar?</h2>
+<input type="button" onclick= vamosAJugar()>Sí</input>
+ <input type="button" onclick= noVamosAJugar()>No</input>
+  </section>
+    <div id='tusRespuestas'>
+    <form id= 'quieroJugar'>
+  HTML es: <br> a) Un lenguaje de programación <br> b) Un lenguaje de marcado <br> c) Un lenguaje de marcado y modelado semántico:<br>
+  <input type="text" id='respuesta1' name="firstname" maxlength=1 placeholder="Tu respuesta">
+  <br>
+  ¿Qué significa CSS? <br> a) Hojas de estilo en escalera <br> b) Hojas de estilo en cascada <br> c) Hojas de estilo en acordeón:<br>
+  <input type="text" name="lastname" id='respuesta2' maxlength=1 placeholder="Tu respuesta">
+  <br>
+  ¿Cuál de estos NO es una estructura de control? <br> a) if <br> b) else <br> c) do while:<br>
+  <input type="text" name="lastname" id='respuesta3' maxlength=1 placeholder="Tu respuesta">
+  <br>
+  <br><br>
+  <input type=button onclick="lastFunction()" value="¿Qué tal te fue?"/>
+</form>
+</div>
+    <div id="render"></div><!-- ID para interactuar en JS. Se imprimirá en la última página si la usuaria no desea jugar-->
+    <div id='show-results'> <!-- ID para interactuar en JS y modificar en CSS. Podremos evitar que los recuadros de las respuestas se muestren si la usuaria no desea jugar -->
+      <div>
+        <section id='titleRightAnswers'> </section> <!-- Título de caja de respuestas correctas. ID para interactuar en JS y modificar en CSS -->
+        <section id='right'> </section> <!-- Caja de respuestas correctas. ID para interactuar en JS y modificar en CSS -->
+        <img id='image1'src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD-gGZN0JotrD_VNeVYSZilWIsVZXFekDE3mRGb7MY1CEDVwkslg' alt='respuestas.Correctas'> <!-- ID para modificar en CSS. Code Pen únicamente admite imagen desde URL -->
+          <!-- <p id="image1" Primer intento para incluir imagen con el uso de un párrafo-->
+            <!-- <img src="correctas.jpg" alt="res.Correctas" border="0">
+          </p> -->
+      </div>
+      <div> <!-- Creamos diferentes div para cada sección de respuestas para poder modificarlos en CSS de manera más sencilla -->
+        <section id='titleWrongAnswers'></section> <!-- Título de caja de respuestas incorrectas. ID para modificar en CSS e interactuar con JS -->
+        <section id='wrong'> </section> <!-- Caja de respuestas incorrectas. ID para interactuar en JS y modificar en CSS -->
+        <!-- <p id="image2" Primer intento para mostrar imagen -->
+        <img id='image2' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PE-JDz1w-I1KuCkBWTrH9pibKns09rB65SDUU0SaiPvq-oZo" alt="res.Incorrectas">
+        <!-- </p> -->
+      </div>
+    </div>
+    <script src='JScript/script.js'></script> <!-- Vinculamos HTML con JS-->
+  </body>
+</html>
